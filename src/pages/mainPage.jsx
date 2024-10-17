@@ -1,9 +1,10 @@
 import React from "react";
-import "./App.css";
+import "../styles/App.css";
+import "../styles/mainpage.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import image from "./assets/profile1.jpg";
-import icon from  "./assets/lk.png";
+import image from "../assets/profile1.jpg";
+import icon from  "../assets/lk.png";
 
 function MainPage(){
     return (

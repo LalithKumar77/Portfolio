@@ -1,0 +1,86 @@
+    .container{
+        display: flex;
+        border-bottom: 1px solid white;
+    }
+    .content{
+        width: 50vw;
+        text-align: center;
+        margin-top: 150px;
+        
+    }
+    .content h1{
+        font-size: 48px;
+        font-weight: 900;
+        color: #ffff;
+        margin-bottom: 20px;
+    }
+    .txt{
+        margin-top: 10px;
+        line-height: 1.6; 
+        width: 90%;
+        margin-left: 5% ;
+    }
+    .txt p {
+        font-size: 18px;
+        margin-top: 10px;
+        color: #ffff; 
+        align-items: center;
+        text-align: center;
+        font-family: "Playfair Display", serif;
+        animation: fadeInUp 3s;
+    }
+   .txt span{
+    color: #a385ff;
+    font-weight: 600;
+   }
+    .skills-toggle {
+        background: #1d1d2e;
+        position: relative;
+        width: max-content;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        border-radius: 100px;
+        z-index: 1;
+        margin-top: 40px;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+      }
+      
+      .skills-toggle::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        bottom: 5px;
+        width: 93px;
+        border-radius: 100px;
+        transition: 0.25s ease-in-out;
+        z-index: -1;
+      }
+      
+      .skills-toggle.active::before {
+        left: 98px;
+        width: 94px;
+      }
+      
+      .toggle-btn {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 900;
+        padding: 5px 25px;
+        transition: 0.25s ease-out; 
+        border-radius: 20px;
+        background: transparent;
+        margin: 5px;
+      }
+      
+    .toggle-btn.active {
+        background-color: #a385ff;
+        color: #ffff; 
+      }
+      
+      
+    .skill{
+        width: 50vw;
+    }

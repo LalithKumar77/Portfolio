@@ -1,15 +1,14 @@
 import React from "react";
-import "./about.css";
-import image from "./assets/about.jpg";
+import "../styles/about.css";
+import image from "../assets/about.jpg";
 
 function About(){
-    return (
-        <div className="about-section">
-    <div className="about-container">
-    <div className="about-slide">
-         {/* Image Section */}
+    return ( 
+     <div className="about-section">
+        <div className="about-container">
+         <div className="about-slide">
             <div className="image-section-about">
-            <div className="outer-border">
+                <div className="outer-border">
                     <img 
                         src={image}
                         alt="About Me"
@@ -22,7 +21,7 @@ function About(){
         <div className="context">
             <div className="about-c">
                 <div className="line"></div>
-                <h1>About Me</h1>
+                <h1><span>About</span> Me</h1>
                 <div className="line"></div>
             </div>
             <div className="text">
@@ -30,9 +29,7 @@ function About(){
                 <p>My approach combines creativity and technical expertise, allowing me to transform ideas into reality while maintaining high standards of code quality. I am committed to continuous learning and actively explore emerging technologies to enhance my skills and stay current in the fast-paced tech landscape.</p>
                 <p>Outside of development, I enjoy reading and watching films, which fuel my creativity and provide fresh perspectives. I am eager to connect and collaborate with like-minded professionals to drive innovation in the digital space.</p>
             </div>
-            
         </div>
-
     </div>
     </div>
 
