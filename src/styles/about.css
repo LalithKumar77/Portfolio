@@ -60,6 +60,8 @@
     align-items: center;
     padding: 8px; 
     box-sizing: border-box; 
+    animation: leftToRight 2ms;
+    animation-timeline: view();
 }
   .about-image{
     flex-direction: column;
@@ -68,7 +70,10 @@
     border: 18px solid #1d1d2e;
     margin: 8px;
     align-items: center;
-
+    /* transform: translateY(10%); */
+    /* transition: 3ms; */
+    animation: leftToRight 2ms;
+    animation-timeline: view();
   }
   .separator {
     width: 1px; 
@@ -106,6 +111,7 @@
   height: 2px; 
   background-color: #a385ff; 
   margin: 0 20px; 
+  
 }
 
 .about-c h1 {
@@ -146,7 +152,7 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(50px); 
+    transform: translateY(10px); 
   }
   100% {
     opacity: 1;
@@ -161,4 +167,14 @@
   50% {
     transform: scale(2.2); 
   }
+}
+
+@keyframes leftToRight {
+  0%{
+    transform: translateX(-50%);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+
 }
